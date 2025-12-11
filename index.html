@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gendri Raditia Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>GENDRI RADITIA ALKINDI</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Halo! Saya Gendri Raditia Alkindi</h1>
+    <p>Mahasiswa Informatics Management | Web & Mobile Developer</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+     Hello! My name is Gendri Raditia Alkindi I’m a student from the Information Technology Department at Politeknik Negeri Padang, majoring in Informatics Management.
+ I enjoy learning about technology, especially web and mobile development.
+ I like building useful apps and always try to improve my coding skills by working on real projects.
+ My goal is to become a professional developer in the future.
+
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><b>2023 – Present</b> | Politeknik Negeri Padang – Informatics Management</p>
+    <p>i am Currently studying with a focus on web development, 
+        mobile programming, and information systems. Gaining both theoretical knowledge and practical experience in building digital solutions.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>PHP, Laravel</li>
+      <li>Dart (Flutter)</li>
+      <li>Java</li>
+      <li>MySQL</li>
+      <li>Tools: VS Code, Android Studio, Git & GitHub, XAMPP</li>
+    </ul>
+  </section>
+
+ 
+
+ <section id="certificates">
+  <h2>Certificates</h2>
+
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <img src="ceert1.png" alt="Certificate 1">
+      <h4>Java Programming (2024)</h4>
+      <p class="cert-desc">
+       Talent Scouting Academy – Digital Talent Scholarship 2024
+ Organized by KOMINFO and Oracle Academy
+ 📅 February 19 – July 14, 2024
+ This certificate was given for completing a Java programming training. 
+ I learned basic Java concepts and coding skills. The training was part of Indonesia’s Digital Talent Scholarship by KOMINFO.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <img src="cert2.png" alt="Certificate 2">
+      <h4>AWS Cloud Operations (2025)</h4>
+      <p class="cert-desc">
+       
+ This certificate proves I completed a 40-hour course on AWS Cloud Operations, where I learned to manage, monitor, and secure cloud systems using AWS. It helped me build a solid foundation in cloud technology.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <img src="cert3.png" alt="Certificate 3">
+      <h4>English Grammar (2023)</h4>
+      <p class="cert-desc">
+       I received a certificate from Alfalfa Fun English Classes in June 2023
+        for completing the Good Basic Grammar for Speaking program. In this course, I learned simple grammar rules that help me speak English more clearly and correctly. This certificate shows my effort to improve my English skills, especially in speaking and basic communication.
+      </p>
+    </div>
+
+    <div class="cert-card">
+      <img src="cert4.png" alt="Certificate 4">
+      <h4>FLS2N Guitar Duet (2019)</h4>
+      <p class="cert-desc">
+        I received this certificate from the Education Office of West Sumatra Province for joining the FLS2N (National Student Art Festival) at the junior high school level. I participated in the Guitar Duet category, representing my school, SMP Negeri 1 Lubuk Alung. This certificate shows
+         my participation and achievement in a provincial art competition held in Padang in 2019.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Modal Popup -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+</section>
+
+
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <!-- Project 1: Movie App -->
+    <div class="card">
+      <h3>MOVIE APP</h3>
+
+      <div class="slider" data-slider="movie">
+        <button class="prev">&#10094;</button>
+
+        <div class="slides">
+          <img src="movie.png" alt="">
+          <img src="movie2.png" alt="">
+          <img src="movie3.png" alt="">
+        </div>
+
+        <button class="next">&#10095;</button>
+      </div>
+
+      <p>A simple web application to display a list of the latest movies with posters, genres, and short descriptions. Built using PHP, Laravel, MySQL, and styled with HTML/CSS.
+Developed using Visual Studio Code and run locally with XAMPP. This project helped strengthen my skills in web development and backend logic.
+🗓️ Developed in 2025.</p>
+      <a href="https://github.com/gend-raditya/moviedb" target="_blank">GitHub Repo</a>
+    </div>
+
+    <!-- Project 2: Note App -->
+    <div class="card">
+      <h3>NOTE APP</h3>
+
+      <div class="slider" data-slider="note">
+        <button class="prev">&#10094;</button>
+
+        <div class="slides">
+          <img src="notepad.png" alt="">
+        
+        </div>
+
+        <button class="next">&#10095;</button>
+      </div>
+
+      <p>Developed a mobile & web-friendly note-taking application using Flutter
+         and web technologies. Implemented features for creating, editing, deleting and organizing notes, with a clear user interface and responsive design. Managed local data storage and ensured seamless user experience across devices. I created this app in May 2025
+</p>
+      <a href="https://github.com/gend-raditya/tugas_note" target="_blank">GitHub Repo</a>
+    </div>
+
+    <!-- Project 3: Keuanganku -->
+    <div class="card">
+      <h3>KEUANGANKU</h3>
+
+      <div class="slider" data-slider="keuanganku">
+        <button class="prev">&#10094;</button>
+
+        <div class="slides">
+          <img src="keuanganku.png" alt="">
+          <img src="keuangan2.png" alt="">
+          <img src="keuangan3.png" alt="">
+        </div>
+
+        <button class="next">&#10095;</button>
+      </div>
+
+      <p>Keuanganku is a personal finance management web application developed in 2025. It is designed to help users record income and expenses, track their balance in real time, and view simple financial summaries. The project follows the MVC (Model–View–Controller) architecture using Laravel, ensuring clean, scalable, and easy-to-maintain code.</p>
+      <a href="https://github.com/gend-raditya/keuanganku_gendri" target="_blank">GitHub Repo</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: gendriraditya9@gmail.com</li>
+      <li>LinkedIn: linkedin.com/in/gendri-raditya</li>
+      <li>Instagram: instagram.com/gendri_0905</li>
+      <li>GitHub: github.com/gend-raditya</li>
+      <li>Blog: gendriraditya.blogspot.com</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Gendri Raditia</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Modal for Project Images -->
+<div id="projectModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="projectModalImg">
+</div>
+
+</body>
+</html>
+
