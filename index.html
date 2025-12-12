@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gendri Raditia Portfolio</title>
+  <meta name="description" content="Portfolio Gendri Raditia Alkindi — Web & Mobile Developer. Contoh proyek, pengalaman, dan kontak." />
+  <link rel="icon" href="icons/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,31 +16,34 @@
       <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
       <a href="#certificates">Certificates</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
+  
+  <main>
 
-  <section id="home" class="hero">
-    <h1>Halo! Saya Gendri Raditia Alkindi</h1>
+<section id="home" class="hero">
+    <h2>Halo! Saya Gendri Raditia Alkindi</h2>
     <p>Mahasiswa Informatics Management | Web & Mobile Developer</p>
 
      <!-- FOTO PROFIL -->
   <img src="profil.jpeg" alt="Foto Profil Gendri" class="profile-img">
+  <!-- Tombol Download CV -->
+<a href="cv.pdf" class="btn-cv" download>Download CV</a>
 </section>
-  </section>
 
-  <section id="about">
+<section id="about">
     <h2>About Me</h2>
     <p>
      Hello! My name is Gendri Raditia Alkindi I’m a student from the Information Technology Department at Politeknik Negeri Padang, majoring in Informatics Management.
  I enjoy learning about technology, especially web and mobile development.
  I like building useful apps and always try to improve my coding skills by working on real projects.
  My goal is to become a professional developer in the future.
-
-    </p>
-  </section>
+</p>
+ </section>
 
   <section id="education">
     <h2>Education</h2>
@@ -48,17 +52,67 @@
         mobile programming, and information systems. Gaining both theoretical knowledge and practical experience in building digital solutions.</p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>PHP, Laravel</li>
-      <li>Dart (Flutter)</li>
-      <li>Java</li>
-      <li>MySQL</li>
-      <li>Tools: VS Code, Android Studio, Git & GitHub, XAMPP</li>
-    </ul>
-  </section>
+  <!--skill-->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <ul class="skill-list">
+
+    <li><img src="icons/html.png" alt="HTML icon" loading="lazy"> HTML, CSS, JavaScript</li>
+
+    <li><img src="icons/php.png" alt="PHP icon" loading="lazy"> PHP, Laravel</li>
+
+    <li><img src="icons/flutter.webp" alt="Flutter icon" loading="lazy"> Dart (Flutter)</li>
+
+    <li><img src="icons/java.webp" alt="Java icon" loading="lazy"> Java</li>
+
+    <li><img src="icons/mysql.png" alt="MySQL icon" loading="lazy"> MySQL</li>
+
+    <li>Tools: VS Code, Android Studio, Git, GitHub, XAMPP</li>
+
+  </ul>
+</section>
+
+
+
+  <section id="experience">
+  <h2>Experience</h2>
+
+  <div class="exp-container">
+
+    <div class="exp-card">
+      <h3>Web Developer – Personal Projects</h3>
+      <p class="exp-year">2023 – Present</p>
+      <p>
+        Developing multiple web applications using HTML, CSS, JavaScript, PHP, 
+        Laravel, and MySQL. Built full-stack systems such as Movie App and 
+        Keuanganku. Strengthened skills in UI/UX, database design, and API handling.
+      </p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Mobile Developer – Flutter Projects</h3>
+      <p class="exp-year">2024 – Present</p>
+      <p>
+        Created mobile applications including Note App with features like create, 
+        edit, delete, local storage, and responsive UI. Experienced with widget 
+        state management and Flutter framework basics.
+      </p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Academic & Team Projects – Politeknik Negeri Padang</h3>
+      <p class="exp-year">2023 – 2025</p>
+      <p>
+        Completed various college projects related to mobile programming, 
+        web development, and information system design. Collaborated in 
+        small teams and practiced problem-solving in real scenarios.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
  
 
@@ -68,7 +122,7 @@
   <div class="cert-grid">
 
     <div class="cert-card">
-      <img src="ceert1.png" alt="Certificate 1">
+      <img src="cert1.png" alt="Certificate 1">
       <h4>Java Programming (2024)</h4>
       <p class="cert-desc">
        Talent Scouting Academy – Digital Talent Scholarship 2024
@@ -93,7 +147,8 @@
       <h4>English Grammar (2023)</h4>
       <p class="cert-desc">
        I received a certificate from Alfalfa Fun English Classes in June 2023
-        for completing the Good Basic Grammar for Speaking program. In this course, I learned simple grammar rules that help me speak English more clearly and correctly. This certificate shows my effort to improve my English skills, especially in speaking and basic communication.
+        for completing the Good Basic Grammar for Speaking program. In this course, I learned simple grammar rules that help me speak English more clearly and correctly. This certificate shows
+         my effort to improve my English skills, especially in speaking and basic communication.
       </p>
     </div>
 
@@ -111,11 +166,10 @@
 
 
   <!-- Modal Popup -->
-  <div id="imageModal" class="modal">
+  <div id="imageModal" class="modal" role="dialog" aria-hidden="true" aria-label="Image modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
+    <img class="modal-content" id="modalImg" alt="Enlarged image">
   </div>
-</section>
 
 
   <section id="projects">
@@ -128,21 +182,20 @@
       <h3>MOVIE APP</h3>
 
       <div class="slider" data-slider="movie">
-        <button class="prev">&#10094;</button>
-
+        <button class="prev" aria-label="Previous slide">&#10094;</button>
         <div class="slides">
-          <img src="movie.png" alt="">
-          <img src="movie2.png" alt="">
-          <img src="movie3.png" alt="">
+          <img src="movie.png" alt="Movie App screenshot 1" loading="lazy">
+          <img src="movie2.png" alt="Movie App screenshot 2" loading="lazy">
+          <img src="movie3.png" alt="Movie App screenshot 3" loading="lazy">
         </div>
 
-        <button class="next">&#10095;</button>
+        <button class="next" aria-label="Next slide">&#10095;</button>
       </div>
 
       <p>A simple web application to display a list of the latest movies with posters, genres, and short descriptions. Built using PHP, Laravel, MySQL, and styled with HTML/CSS.
 Developed using Visual Studio Code and run locally with XAMPP. This project helped strengthen my skills in web development and backend logic.
 🗓️ Developed in 2025.</p>
-      <a href="https://github.com/gend-raditya/moviedb" target="_blank">GitHub Repo</a>
+      <a href="https://github.com/gend-raditya/moviedb" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
     </div>
 
     <!-- Project 2: Note App -->
@@ -150,20 +203,19 @@ Developed using Visual Studio Code and run locally with XAMPP. This project help
       <h3>NOTE APP</h3>
 
       <div class="slider" data-slider="note">
-        <button class="prev">&#10094;</button>
-
+        <button class="prev" aria-label="Previous slide">&#10094;</button>
         <div class="slides">
-          <img src="notepad.png" alt="">
+          <img src="notepad.png" alt="Note App screenshot" loading="lazy">
         
         </div>
 
-        <button class="next">&#10095;</button>
+        <button class="next" aria-label="Next slide">&#10095;</button>
       </div>
 
       <p>Developed a mobile & web-friendly note-taking application using Flutter
          and web technologies. Implemented features for creating, editing, deleting and organizing notes, with a clear user interface and responsive design. Managed local data storage and ensured seamless user experience across devices. I created this app in May 2025
 </p>
-      <a href="https://github.com/gend-raditya/tugas_note" target="_blank">GitHub Repo</a>
+      <a href="https://github.com/gend-raditya/tugas_note" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
     </div>
 
     <!-- Project 3: Keuanganku -->
@@ -171,22 +223,26 @@ Developed using Visual Studio Code and run locally with XAMPP. This project help
       <h3>KEUANGANKU</h3>
 
       <div class="slider" data-slider="keuanganku">
-        <button class="prev">&#10094;</button>
-
+        <button class="prev" aria-label="Previous slide">&#10094;</button>
         <div class="slides">
-          <img src="keuanganku.png" alt="">
-          <img src="keuangan2.png" alt="">
-          <img src="keuangan3.png" alt="">
+          <img src="keuanganku.png" alt="Keuanganku screenshot 1" loading="lazy">
+          <img src="keuangan2.png" alt="Keuanganku screenshot 2" loading="lazy">
+          <img src="keuangan3.png" alt="Keuanganku screenshot 3" loading="lazy">
         </div>
 
-        <button class="next">&#10095;</button>
+        <button class="next" aria-label="Next slide">&#10095;</button>
       </div>
 
-      <p>Keuanganku is a personal finance management web application developed in 2025. It is designed to help users record income and expenses, track their balance in real time, and view simple financial summaries. The project follows the MVC (Model–View–Controller) architecture using Laravel, ensuring clean, scalable, and easy-to-maintain code.</p>
-      <a href="https://github.com/gend-raditya/keuanganku_gendri" target="_blank">GitHub Repo</a>
+      <p>Keuanganku is a personal finance management web application developed in 2025. It is designed
+         to help users record income and expenses, track their balance in real time, and view simple 
+         financial summaries. The project follows the MVC (Model–View–Controller) architecture using 
+         Laravel, ensuring clean, scalable, and easy-to-maintain code.</p>
+      <a href="https://github.com/gend-raditya/keuanganku_gendri" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
     </div>
 
   </div>
+
+  
 </section>
 
 
@@ -197,31 +253,31 @@ Developed using Visual Studio Code and run locally with XAMPP. This project help
   <ul class="contact-list">
 
     <li>
-      <a href="mailto:gendriraditya9@gmail.com" target="_blank">
+      <a href="mailto:gendriraditya9@gmail.com" target="_blank" rel="noopener noreferrer">
         📧 Email: gendriraditya9@gmail.com
       </a>
     </li>
 
     <li>
-      <a href="https://www.linkedin.com/in/gendri-raditya" target="_blank">
+      <a href="https://www.linkedin.com/in/gendri-raditya" target="_blank" rel="noopener noreferrer">
         🔗 LinkedIn: linkedin.com/in/gendri-raditya
       </a>
     </li>
 
     <li>
-      <a href="https://www.instagram.com/gendri_0905" target="_blank">
+      <a href="https://www.instagram.com/gendri_0905" target="_blank" rel="noopener noreferrer">
         📸 Instagram: instagram.com/gendri_0905
       </a>
     </li>
 
     <li>
-      <a href="https://github.com/gend-raditya" target="_blank">
+      <a href="https://github.com/gend-raditya" target="_blank" rel="noopener noreferrer">
         🐱 GitHub: github.com/gend-raditya
       </a>
     </li>
 
     <li>
-      <a href="https://gendriraditya.blogspot.com" target="_blank">
+      <a href="https://gendriraditya.blogspot.com" target="_blank" rel="noopener noreferrer">
         📝 Blog: gendriraditya.blogspot.com
       </a>
     </li>
@@ -230,6 +286,8 @@ Developed using Visual Studio Code and run locally with XAMPP. This project help
 </section>
 
 
+  </main>
+
   <footer>
     <p>© 2025 Gendri Raditia</p>
   </footer>
@@ -237,10 +295,10 @@ Developed using Visual Studio Code and run locally with XAMPP. This project help
   <script src="script.js"></script>
 
   <!-- Modal for Project Images -->
-<div id="projectModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="projectModalImg">
-</div>
+  <div id="projectModal" class="modal" role="dialog" aria-hidden="true" aria-label="Project image modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="projectModalImg" alt="Project enlarged image">
+  </div>
 
 </body>
 </html>
